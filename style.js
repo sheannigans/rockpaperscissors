@@ -30,3 +30,17 @@ function computerTurn () {
             break;    
     }
 }
+function checkWinner (){
+    if(player == computer){
+        return "Draw!";
+    }
+    else if(computer == "Rock"){
+        return (player == "Paper") ? "You Win!" : "You Lose!";
+    }
+    else if(computer == "Paper"){
+        return (player == "Scissors") ? "You Win!" : "You Lose!";
+    }
+    else if(computer == "Scissors"){
+        return (player == "Rock") ? "You Win!" : "You Lose!";
+    }
+}
